@@ -1,0 +1,228 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    
+    background: url('login.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+nav{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background: rgb(250, 247, 247);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+ nav .logo h1{
+    width: 100px;
+    cursor: pointer;
+    font-size: 40px;
+    
+    font-family: mv boli;
+    color: rgb(174, 21, 100);
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(255, 98, 0), 0 0 5px darkblue;
+}
+
+ nav ul{
+    list-style: none;
+}
+
+ nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+ nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.1s;
+}
+
+ nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    transition: 0.2s linear;
+}
+
+ nav ul li a:hover::after{
+    width: 100%;
+}
+
+ nav ul li a:hover{
+    color: #fac031;
+}
+ nav .icon input{
+    font-size: 18px;
+    color: #000;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    height: 35px;
+    width: 120px;
+}
+
+ nav .icon i{
+    font-size: 18px;
+    color: #000;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+ nav .icon i:hover{
+    color: #fac031;
+}
+
+.form-box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 5px solid rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+h2{
+    font-size: 2em;
+    color: #0b0b0b;
+    text-align: center;
+    font-family: mv boli;
+}
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #010101;
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #060606;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+input:focus ~ label,
+input:valid ~ label{
+top: -5px;
+}
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: #060606;
+}
+.inputbox ion-icon{
+    position: absolute;
+    right: 8px;
+    color: #0b0b0b;
+    font-size: 1.2em;
+    top: 20px;
+}
+.forget{
+    margin: -15px 0 15px ;
+    font-size: .9em;
+    color: #090909;
+    display: flex;
+    justify-content: space-between;  
+}
+
+.forget label input{
+    margin-right: 3px;
+    
+}
+.forget label a{
+    color: #0e0edf;
+    text-decoration: none;
+}
+.forget label a:hover{
+    text-decoration: underline;
+}
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #060606;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+.login{
+    font-size: .9em;
+    color: #121212;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.login input{
+  
+   width: 100px;
+   height: 40px;
+    color: #000;
+    background: #988484;
+font-size: large;
+    border-radius: 20px;
+}
+.register{
+    font-size: .9em;
+    color: #121212;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.register p a{
+    text-decoration: none;
+    color: rgb(79, 21, 237);
+    font-weight: 600;
+}
+.register p a:hover{
+    text-decoration: underline;
+}
+.register input{
+    
+   width: 100px;
+   height: 40px;
+    color: #000;
+    background: #a69090;
+font-size: large;
+    border-radius: 20px;
+}

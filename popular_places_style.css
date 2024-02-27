@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+section nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background: rgb(250, 247, 247);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+section nav .logo h1{
+    width: 100px;
+    cursor: pointer;
+    font-size: 40px;
+    
+    font-family: mv boli;
+    color: rgb(174, 21, 100);
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(255, 98, 0), 0 0 5px darkblue;
+}
+
+section nav ul{
+    list-style: none;
+}
+
+section nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+section nav ul li a{
+    text-decoration: none;
+    color: #100f0f;
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.1s;
+}
+
+section nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    transition: 0.2s linear;
+}
+
+section nav ul li a:hover::after{
+    width: 100%;
+}
+
+section nav ul li a:hover{
+    color: #fac031;
+}
+section nav .icon input{
+    font-size: 18px;
+    color: #000;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    height: 35px;
+    width: 120px;
+}
+
+section nav .icon i{
+    font-size: 18px;
+    color: #000;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+section nav .icon i:hover{
+    color: #fac031;
+}
+
+.about1{
+    width: 100%;
+    height: 10vh;
+    padding: 70px 0;
+   
+   
+}
+.about1 .about_main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about1 .about_main .about_text h1 span{
+    color: #fac031;
+    margin-right: 15px;
+    font-family: mv boli;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(255, 157, 0), 0 0 5px darkblue;
+}
+
+.about1 .about_main .about_text h1{
+    font-size: 55px;
+    position: relative;
+    bottom: -10px;
+    
+}
+.about{
+    width: 100%;
+    height: 80vh;
+    padding: 70px 0;
+}
+
+
+.about .about_main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about .about_main .image img{
+    width: 700px;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    border-radius: 20px;
+}
+
+.about .about_main .about_text h1 span{
+    color: #fac031;
+    margin-right: 15px;
+    font-family: mv boli;
+}
+
+.about .about_main .about_text h1{
+    font-size: 55px;
+    position: relative;
+    bottom: 50px;
+}
+
+.about .about_main .about_text h3{
+    font-size: 50px;
+    margin: 0 0 50px 0;
+    font-family: mv boli ;
+    color: rgb(78, 8, 49);
+   
+}
+
+.about .about_main .about_text p{
+    width: 650px;
+    text-align: justify;
+    margin-right: 30px;
+    line-height: 22px;
+    box-shadow: 10px 10px 5px lightblue;
+}
+
+.about .about_btn{
+    background: #840404;
+    padding: 12px 25px;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    left: 55%;
+    bottom: 30px;
+    border-radius: 20px;
+}
